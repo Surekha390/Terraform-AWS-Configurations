@@ -1,0 +1,1 @@
+ami = "ami-0b6d6dacf350ebc82"
