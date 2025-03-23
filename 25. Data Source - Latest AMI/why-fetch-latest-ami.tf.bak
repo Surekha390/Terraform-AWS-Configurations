@@ -1,0 +1,11 @@
+provider "aws" {
+    region = "us-east-1"
+}
+resource "aws_instance" "web" {
+    ami = "ami-0b6d6dacf350ebc82" #This AMI belongs to 'us-west-2' region . So we will get an error. So it is always better not to give static value like this.
+    instance_type = "t2.micro"
+}
+/*
+Error: creating EC2 Instance: operation error EC2: RunInstances, https response error StatusCode: 400, 
+RequestID: ee3f98f7-6358-4b88-b522-6034928dea19, api error InvalidAMIID.NotFound: The image id '[ami-0b6d6dacf350ebc82]' does not exist
+*/

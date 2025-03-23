@@ -1,0 +1,7 @@
+ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250305   -  ami-075686beab831bb7f  - us-west-2
+
+
+ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250305  -   ami-084568db4383264d4  - us-east-1 
+
+
+"ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*"  - vs code
