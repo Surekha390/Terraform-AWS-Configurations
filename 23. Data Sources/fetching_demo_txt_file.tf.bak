@@ -1,0 +1,12 @@
+data "local_file" "foo" {
+  filename = "${path.module}/demo.txt"  #Reads a file from the local filesystem.
+}
+ # we can see the content of file in .tfstate file
+ #${path.module} will get the path from our system where this program exists and then in this path as we mentioned /demo.txt it will be added to the path.
+ #instead of giving ${path.module}, we can also give direct path, where this file exists in our local system like: 
+#"C:\Users\dci-student\Documents\Surekha-Terraform-Configurations\Terraform-AWS-Configurations\23. Data Sources"
+ 
+
+ output "my-data" {
+    value = data.local_file.foo.content
+ }
