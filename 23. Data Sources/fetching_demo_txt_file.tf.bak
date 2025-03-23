@@ -10,3 +10,4 @@ data "local_file" "foo" {
  output "my-data" {
     value = data.local_file.foo.content
  }
+ #we can see the information regarding instance in .tfstate file.

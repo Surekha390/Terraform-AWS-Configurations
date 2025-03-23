@@ -4,3 +4,4 @@ provider "aws" {
 data "aws_instances" "example" {
 
 }
+#we can see the information regarding instance in .tfstate file.
