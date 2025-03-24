@@ -18,3 +18,5 @@ resource "aws_instance" "my_ec2" {
   instance_type = "t2.micro"
   subnet_id = "subnet-035810c6619ba14aa"
 }
+
+#we can directly search with AMI-ID in the search bar of AMIs(not in AMI catalog) in EC2 in AWS console to get the AMI name.
